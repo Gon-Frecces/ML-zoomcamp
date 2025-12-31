@@ -48,7 +48,7 @@ def preprocess(img):
 
 # ---------- Model loading ----------
 
-model_path = 'hair_classifier_v1.onnx'
+model_path = 'hair_classifier_empty.onnx'
 session = ort.InferenceSession(model_path)
 
 input_name = session.get_inputs()[0].name
